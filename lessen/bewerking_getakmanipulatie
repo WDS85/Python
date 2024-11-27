@@ -1,0 +1,13 @@
+#######*** Bewerkingen en getalmanipulatie (Operators) ***#########
+#######################################################
+
+# Voor een som gebruik je + 
+# verschil een - 
+# een deling gebruik je / 
+# en voor vermenigvuldiging een * .
+### Deze staan hieronder ook mooi onder elkaar geschreven.
+
+#sum = a+b
+#dif = a-b
+#dev = a/b
+#multi = a*b

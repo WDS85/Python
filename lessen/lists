@@ -1,0 +1,245 @@
+### lijsten opvullen
+# naam = [waarden die je wil toekennen gesplitst door een ' , ' ]
+### Hieronder zie je voorbeelden van lijsten.
+
+#same_height_and_testscores = ["Sam",67,85.5,True]
+#print(same_height_and_testscores)
+
+#empty_list = []
+
+
+############ Append #############
+#################################
+
+### De functie Append voegt achteraan de lijst een nieuwe waarde toe.
+## Hieronder verschillende voorbeelden.
+
+#append_example = ['this', 'is', 'an', 'example']
+#append_example.append('list')
+#print(append_example)
+
+### Mogelijke werkwijze is 
+### Lege lijst -> vraag data -> voeg toe aan lege lijst
+
+
+#orders = ["Daisies", "Periwinkle"]
+#orders.append("Tulips")
+#orders.append("Roses")
+#print(orders)
+
+#enkel mogelijk om twee lijsten samen te voegen, onderstaande zal niet lukken
+#mylist = [1, 2, 3]
+#mynewlist = mylist + 4
+#print(mynewlist)
+
+#wel via dit
+
+#mylist = [1, 2, 3]
+#mynewlist = mylist + [4]
+#print(mynewlist)
+
+
+#########  Lijst Index ############
+###################################
+### De waarden van een lijst worden bewaard op een bepaalde index of positie
+#posities starten vanaf 0, dus de eerste waarde (hieronder Juan) staat op positie 0.
+
+#calls = ['Juan','Zofia','Amare','Ezio','Ananya']
+#print(calls[0])
+
+#studenten=['Jef','Bram','Joske','Marie']
+#student_vier = studenten[3]
+#print(student_vier)
+
+
+################ vervangen van waarden in de lijst #####################
+########################################################################
+#### Er zijn een aantal manieren om waarden te wijzigen in een lijst.
+
+# Python List Methods 
+
+# 1. append(x) - Voegt een item toe aan het einde van de lijst.
+# my_list.append(4)
+
+# # 2. extend(iterable) - Voegt alle items uit een iterabele toe aan de lijst.
+# my_list.extend([4, 5])
+
+# # 3. insert(index, x) - Voegt een item in op een specifieke index.
+# my_list.insert(2, 3)
+
+# # 4. remove(x) - Verwijdert de eerste keer dat een item voorkomt.
+# my_list.remove(2)
+
+# # 5. pop([index]) - Verwijdert en retourneert een item op een specifieke index (standaard het laatste).
+# last_item = my_list.pop()
+
+# # 6. clear() - Leegt de lijst volledig.
+# my_list.clear()
+
+# # 7. index(x, [start, [end]]) - Geeft de index van het eerste item dat overeenkomt met x.
+# position = my_list.index(2)
+
+# # 8. count(x) - Telt hoe vaak een item voorkomt in de lijst.
+# occurrences = my_list.count(2)
+
+# # 9. sort(key=None, reverse=False) - Sorteert de lijst in oplopende volgorde (of omgekeerd met reverse=True).
+# my_list.sort()  # Oplopend
+# my_list.sort(reverse=True)  # Aflopend
+
+# # 10. reverse() - Keert de volgorde van de lijst om.
+# my_list.reverse()
+
+# # 11. copy() - Maakt een kopie van de lijst.
+# copy_list = my_list.copy()
+
+
+### rechtstreekse index aanspreken. 
+#Je kies de positie in de lijst die je wil aanpassen en overschrijft de waarde rechtstreeks.
+#garden=['Tomatoes','Green Beans', 'Cauliflower', 'Grapes']
+#garden[2] = "Strawberries"
+#print(garden)
+
+
+#### remove ####
+## Het verwijderen van een bepaalde waarde kan via de remove methode.
+# Je geeft daarmee de waarde mee die je wil verwijderen. Als een waarde meermaals terugkomt, 
+## zal het de waarde verwijderen met het laagste indexnummer (de eerst gevonden waarde).
+#shopping_line = ['Cole','Kip','Chris', 'Sylvana']
+#shopping_line.remove("Chris")
+#print(shopping_line)
+
+#### Insert ####
+##insert - invoegen ve element op een specifieke positie
+#store_line.insert(2,"Viktor")
+
+#### Pop ####
+##Pop - verwijderen ve element op een specifieke positie
+#cs_topics.pop()
+
+#### Range ####
+## Een functie die een reeks ints in een lijst vorm zet.
+
+#range(2,9,2) -> laatste 2 zijn sprongen
+#myrange = range(10)
+#print(list(myrange))
+
+#### Len(gth) ####
+## Len functie geeft de hoeveelheid waarden in een lijst terug, niet de waarden in de lijst zelf. 
+#mylist = [1,2,3,4,5]
+#print(len(mylist))
+
+#big_range = range(2,3000,10)
+#print(len(big_range))
+
+
+#### Slicing ####
+#################
+### Met slicing geef je een bepaald deel weer van een lijst, afhankelijk van hoe je de slicing syntax gebruikt.
+
+#letters=["a","b","c","d","e","f","g"]
+#print(letters[2:6])
+
+### Print tot de x'de positie
+#print(letters[ : 3])
+### Print vanaf de x'de positie
+#print(letters[3: ])
+
+### Print de posities zonder de laatste x posities
+#print(letters[ :-1])
+### Print de laatste x posities
+#print(letters[-2: ])
+
+#### Count ####
+### count tel hoe vaak een waarde voorkomt
+#letters = ["m","i","s"]
+#num_i = letters.count("i")
+
+#### Sorteren ####
+### Sort methode
+#lijst.sort
+
+### Sort functie
+#mylist=[c,a,b,b,e,g,e,s]
+#sortedlist = sort(mylist)
+
+# names = ["Xander", 'Buffy', 'Ángel', 'Willow', 'Giles']
+# sorted_names = sorted(names)
+
+
+##### Enkele oefeningen ######
+##############################
+
+### Voeg waarden toe aan een lege lijst. Verwijder de waarde op positie 2.
+### Print hierna het resultaat.
+
+#mylist=[]
+
+#mylist.append(2)
+#mylist.append(5)
+#mylist.append(8)
+#mylist.append(11)
+#mylist.append(20)
+
+#i=0
+#j=0
+
+#while i < 5:
+#    j+=1
+#    mylist.append(j)
+##    print(mylist)
+#    i+=1
+
+#mylist.pop(2)
+#print(mylist)
+
+
+### Vul een naamlijst met de string Alice er tussen. Verwijder Alice hierna met de remove methode.
+#namelist = ["Cheshire","Mad Hatter","Alice","Red Queen","Catterpillar","White Rabbit"]
+#namelist.remove("Alice")
+#print(namelist)
+
+
+### Gebruikt sort om willekeurige getallen te sorteren.
+#numbers = [11, 3, 7, 2, 1]
+#numbers.sort()
+#print(numbers)
+
+
+### vul een legel ijst met een range. Verwijder de tweede positie, 
+## voeg het getal 6 in op de eerste positie, verwijder het getal 2.
+## Print hierna het resultaat.
+
+#nummers = []
+#nummers = list(range(1,6))
+#nummers.pop(2)
+#nummers.insert(1,6)
+#nummers.remove(2)
+#print(nummers)
+
+
+#####  Oefening oneven/even check  #####
+### doe een check in een lijst om na te kijken of een getal even of oneven is.
+## Is het getal even, print dit dan als even en vise versa.
+
+
+#CheckList = [11,20,3,4,50]
+
+#i = 0
+
+#while i<=4:
+#    if CheckList[i]%2==0:
+#        print("Even getal: ", CheckList[i])
+#        i+=1
+ #   else:
+ #       print("Oneven getal: ", CheckList[i])
+ #       i+=1
+
+#i = 0
+
+#while i<=4:
+#    if CheckList[i]<10:
+#        print("Kleiner dan 10: ", CheckList[i])
+#        i+=1
+#    else:
+#        print("Groter dan 10: ", CheckList[i])
+#        i+=1

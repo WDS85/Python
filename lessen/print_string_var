@@ -1,0 +1,31 @@
+#################### print, strings, variabelen #######################
+#######################################################################
+
+# x = 5          # Integer
+# y = 3.14       # Float
+# name = "John"  # String
+# is_happy = True  # Boolean
+#variabelen kunnen geen spaties of symbolen in hun naam hebben, enkel _
+
+##Concatenate of samenvoegen
+# zoals de naam aangeeft zal een string aan een andere string hangen. 
+# ! als je een cijfer wil toevoegen moet je dit omzetten als een string.
+##Concatenate [+]
+#a = "De les"
+#b = "is leuk"
+
+## Plus equals is een korte manier om een waarde aan een bestaande waarde toe te voegen. 
+# Je originele waarde staat links.
+##Plus equals [+=]
+
+## meerdere lijnen 
+#ditismijnvariabele = """
+#Dit
+#is
+#mijn
+#text """
+#print(ditismijnvariabele)
+
+## Conditionals of voorwaardelijkheden, zijn een voorwaarde dat je geeft aan je variabelen. Deze gaan meestal samen met booleans.
+## Een boolean kan je zien als : aan of uit, 1 of 0, TRUE of FALSE en Ja of Nee. 
+## Dit is altijd een waarde dat aangeeft dat de code iets al dan niet mag doen/uitvoeren.

@@ -17,6 +17,6 @@ if response.status_code == 200:
     print(f"{deaths} known Covid-19 deaths")
     print(f"{recovered} known recoveries")
 else:
-    print(f"Fout: {reponse.status_code}")
+    print(f"Fout: {response.status_code}")
 
     

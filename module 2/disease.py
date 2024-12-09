@@ -19,9 +19,8 @@ if response.status_code == 200:
     print(f"{recovered} known recoveries")
 # else:
 #     print(f"Fout: {response.status_code}")
-elif response.status_code == 404:
-    print(f"Het land werd niet gevonden")
-
+# elif response.status_code == 404:
+#     print(f"Het land werd niet gevonden")
 else: 
     print(f"Fout: {response.status_code}")
 

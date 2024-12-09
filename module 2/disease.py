@@ -9,7 +9,8 @@ response = requests.get(api_url)
 
 if response.status_code == 200:
     result = response.json()
-    cases = result['cases']
+    # cases = result['cases']
+    cases = result.get('cases')
     deaths = result['deaths']
     recovered = result['recovered']
     print(f"\nThe country {country} has:")

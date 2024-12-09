@@ -16,7 +16,17 @@ if response.status_code == 200:
     print(f"{cases} known Covid-19 cases")
     print(f"{deaths} known Covid-19 deaths")
     print(f"{recovered} known recoveries")
-else:
+# else:
+#     print(f"Fout: {response.status_code}")
+elif response.status_code == 404:
+    print(f"Het land werd niet gevonden")
+
+else: 
     print(f"Fout: {response.status_code}")
+
+    
+        
+
+
 
     
